@@ -8,19 +8,19 @@ import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
-// const PDF_FILE_URL = 'http://localhost:3000/Faza_Murtadho_Resume.pdf'
+const PDF_FILE_URL = 'http://localhost:3000/Faza_Murtadho_Resume.pdf'
 
 const Home = () => {
-  const downloadCV = () => {
-     // Get the current URL
+  const downloadCV = (filename: string): void => {
+    // Get the current URL
     const url = window.location.href;
 
     // Create an anchor element
     const anchor = document.createElement('a');
     anchor.href = url;
     
-    // Set the download attribute with a filename (optional)
-    anchor.download = 'downloaded-file'; // Set the filename for the downloaded file
+    // Set the download attribute with the provided filename
+    anchor.download = filename;
     
     // Append the anchor to the body (necessary for Firefox)
     document.body.appendChild(anchor);
@@ -54,7 +54,7 @@ const Home = () => {
                 variant="outline" 
                 size="lg" 
                 className="uppercase flex items-center gap-2"
-                onClick={() => {downloadCV()}}
+                onClick={() => {downloadCV(PDF_FILE_URL)}}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
