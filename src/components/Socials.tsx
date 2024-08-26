@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 
 // typeProps
-import { SocialsStyles } from "@/app/AppProps";
+import { SocialsStyles } from "@/app/CustomProps";
 
 
 const socials = [

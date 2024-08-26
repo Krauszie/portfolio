@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-// type Props
-import { CustomProps } from "@/app/CustomProps";
-
 // components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
