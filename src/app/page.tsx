@@ -8,12 +8,13 @@ import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
-const PDF_FILE_URL = 'Faza_Murtadho_Resume.pdf'
+const PDF_FILE_URL = 'Faza_Murtadho_Resume.pdf';
 
 const Home = () => {
   const downloadCV = (filename: string): void => {
-    // Get the current URL
-    const url = window.location.href;
+    // Construct the URL to the raw file on GitHub
+    const baseUrl = `https://raw.githubusercontent.com/Krauszie/portfolio/main/public/${filename}`;
+    const url = baseUrl;
 
     // Create an anchor element
     const anchor = document.createElement('a');
