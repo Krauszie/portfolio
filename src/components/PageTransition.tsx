@@ -1,13 +1,13 @@
 "use client";
 
 // type props
-import { AppProps } from "@/app/AppProps";
+import { CustomProps } from "@/app/CustomProps";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 
-const PageTransition = ({children} : AppProps) => {
+const PageTransition = ({children} : CustomProps) => {
   const pathname = usePathname();
 
   return (
