@@ -8,7 +8,7 @@ import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
-const PDF_FILE_URL = 'http://localhost:3000/Faza_Murtadho_Resume.pdf'
+const PDF_FILE_URL = 'Faza_Murtadho_Resume.pdf'
 
 const Home = () => {
   const downloadCV = (filename: string): void => {
