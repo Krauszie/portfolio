@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaJava } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs, SiSpringboot, SiThymeleaf } from 'react-icons/si';
+import { SiTailwindcss, SiNextdotjs, SiSpringboot, SiThymeleaf, SiTypescript } from 'react-icons/si';
 
 // components
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -98,7 +98,7 @@ const education = {
 const skills = {
   title: "My skills",
   description: 
-  "Front-End Website: Tailwind CSS, ReactJS, Thymeleaf.  \
+  "Front-End Website: Tailwind CSS, ReactJS, Typescript, Thymeleaf.  \
   Other Programming Language: JavaScript, Java, C#, HTML, Springboot. \
   Architecture: Model View Controller.",
   skillList: [
@@ -113,6 +113,10 @@ const skills = {
     {
       icon: <FaJs/>,
       name: "Javascript"
+    },
+    {
+      icon: <SiTypescript/>,
+      name: "Typescript"
     },
     {
       icon: <FaReact/>,
