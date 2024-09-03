@@ -6,7 +6,7 @@ import { SocialsStyles } from "@/app/CustomProps";
 
 
 const socials = [
-    {icon: <FaGithub/>, path: "https://github.com/Krauszie?tab=repositories"},
+    {icon: <FaGithub/>, path: "https://github.com/Krauszie"},
     {icon: <FaLinkedinIn/>, path: "https://www.linkedin.com/in/faza-murtadho-937568251/"},
 ]
 
