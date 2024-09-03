@@ -15,7 +15,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 const about = {
   title: "About me",
   description: 
-  "Full Stack Developer with 2 years of experience creating responsive, user-friendly websites and applications. \
+  "Full Stack Developer with 1+ years of experience creating responsive, user-friendly websites and applications. \
   Proficient in HTML, CSS, and JavaScript. Enthusiastic towards new tech in Front End Development for website. \
   Looking to obtain and sharpen skills in the respective area.",
   info: [
@@ -29,7 +29,7 @@ const about = {
      },
      {
       fieldName: "Experience",
-      fieldValue: "2 Years", 
+      fieldValue: "1+ Years", 
      },
      {
       fieldName: "Email",
