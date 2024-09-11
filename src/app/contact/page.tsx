@@ -27,26 +27,26 @@ const info = [
 ]
 
 const Contact = () => {
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-        },
-        body: JSON.stringify({
-            access_key: "YOUR_ACCESS_KEY_HERE",
-            name: e.target.name.value,
-            email: e.target.email.value,
-            message: e.target.message.value,
-        }),
-    });
-    const result = await response.json();
-    if (result.success) {
-        console.log(result);
-    }
-  }
+  // async function handleSubmit(e) {
+  //   e.preventDefault();
+  //   const response = await fetch("https://api.web3forms.com/submit", {
+  //       method: "POST",
+  //       headers: {
+  //           "Content-Type": "application/json",
+  //           Accept: "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //           access_key: "YOUR_ACCESS_KEY_HERE",
+  //           name: e.target.name.value,
+  //           email: e.target.email.value,
+  //           message: e.target.message.value,
+  //       }),
+  //   });
+  //   const result = await response.json();
+  //   if (result.success) {
+  //       console.log(result);
+  //   }
+  // }
 
   return (
     <div className="w-full h-full relative">
