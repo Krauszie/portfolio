@@ -27,6 +27,27 @@ const info = [
 ]
 
 const Contact = () => {
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+        body: JSON.stringify({
+            access_key: "YOUR_ACCESS_KEY_HERE",
+            name: e.target.name.value,
+            email: e.target.email.value,
+            message: e.target.message.value,
+        }),
+    });
+    const result = await response.json();
+    if (result.success) {
+        console.log(result);
+    }
+  }
+
   return (
     <div className="w-full h-full relative">
         <motion.div 
@@ -48,8 +69,7 @@ const Contact = () => {
 
                   {/* input */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <Input type="firstname" placeholder="Firstname"/>
-                    <Input type="lastname" placeholder="Lastname"/>
+                    <Input type="fullname" placeholder="Fullname"/>
                     <Input type="email" placeholder="Email Adress"/>
                     <Input type="phone" placeholder="Phone Number"/>
                   </div>
@@ -107,14 +127,14 @@ const Contact = () => {
           </div>
 
 
-            {/* image
+            {/* image */}
             <motion.div 
               initial={{opacity: 0}}
               animate={{
                 opacity: 1, transition: {delay: 2, duration: 0.4, ease: "easeInOut"},
               }}
 
-              className="w-screen h-screen mix-blend-soft-light absolute"
+              className="mt-20 w-screen h-screen mix-blend-soft-light absolute"
             >
                 <Image
                     src="/assets/MT.png"
@@ -124,7 +144,7 @@ const Contact = () => {
                     alt=""
                     className="object-contain"
                 />
-            </motion.div> */}
+            </motion.div>
 
         </motion.div>
     </div>
