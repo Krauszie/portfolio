@@ -27,10 +27,13 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "フロントエンド",
     title: "Fundraisin",
+    // description:
+    //   "Fundraising Platform for non-profit organization, its go globally for ANZ, UK, and CA",
     description:
-      "Fundraising Platform for non-profit organization, its go globally for ANZ, UK, and CA",
+      "非営利団体の資金調達プラットフォーム作成。<br/> \
+      現在オーストラリア、ニュージーランド、英国、カナダにグロバールに稼働しています。",
     stack: [
       { name: "Html 5" },
       { name: "Code Igniter 3" },
@@ -43,10 +46,11 @@ const projects = [
   },
   {
     num: "02",
-    category: "frontend",
+    category: "フロントエンド",
     title: "Setir Kanan",
-    description:
-      "Market Place for Second Hand Car and Car Service by Astra Group",
+    // description:
+    //   "Market Place for Second Hand Car and Car Service by Astra Group",
+    description: "アストラグループの中古車や中古車サービスの市場",
     stack: [
       { name: "Next" },
       { name: "React" },
@@ -58,10 +62,12 @@ const projects = [
   },
   {
     num: "03",
-    category: "frontend",
+    category: "フロントエンド",
     title: "In House Application for Human Resource",
+    // description:
+    //   "Creating Candidate Profiling using generated rule for it to becomes simple and less time to make",
     description:
-      "Creating Candidate Profiling using generated rule for it to becomes simple and less time to make",
+      "定められた規則で単純で作成時間が短くなる候補者プロファイリングを作成",
     stack: [
       { name: "Next" },
       { name: "React" },
@@ -102,14 +108,23 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-
-              {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title}
               </h2>
 
+              {/* project category */}
+              <h3 className="text-[25px] font-bold leading-none text-accent group-hover:text-accent transition-all duration-500 capitalize">
+                {/* {project.category} project */}
+                {project.category} ・プロジェクト
+              </h3>
+
               {/* project description */}
-              <p className="text-white/60">{project.description}</p>
+              <p
+                className="text-white/60"
+                dangerouslySetInnerHTML={{ __html: project.description }}
+              >
+                {/* {project.description} */}
+              </p>
 
               {/* stack */}
               <ul className="flex gap-2 flex-wrap">

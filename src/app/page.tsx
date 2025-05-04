@@ -39,17 +39,25 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Web Developer</span>
+            <span className="text-xl">Web Developer「ウェブ開発者」</span>
             <h1 className="h1">
               Hello I&apos;m <br />
               <span className="text-accent">Faza Murtadho</span>
             </h1>
-            <p className="max-2-[500px] mb-9 text-white/80">
+            {/* <p className="max-2-[500px] mb-9 text-white/80">
               I specialize in creating elegant digital experiences, with
               expertise in modern technologies. With 1+ years in a Japanese IT
               company and 1+ years collaborating with an Australian company, I
               bring a global perspective and strong cross-cultural collaboration
               skills to every project.
+            </p> */}
+            <p className="max-2-[500px] mb-9 text-white/80">
+              近代的な技術の知識で優雅なデジタル体験を作るのが私の専門です。
+              <br />
+              1年間以上日本のIT企業で働き、1年間以上オーストラリアの企業と協力し、
+              <br />
+              そういった仕事からもらったグロバル的な観点や異文化との協力技術をどんなプロジェクトでも活かして見せます。
+              <br />
             </p>
 
             {/* btn n socials */}
