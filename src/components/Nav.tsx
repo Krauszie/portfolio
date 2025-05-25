@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 
 const links = [
   {
-    // name: "home",
-    name: "ホーム",
+    name: "home",
+    // name: "ホーム",
     path: "/",
   },
   // {
@@ -13,18 +13,18 @@ const links = [
   //     path: "/services",
   // },
   {
-    // name: "resume",
-    name: "履歴",
+    name: "resume",
+    // name: "履歴",
     path: "/resume",
   },
   {
-    // name: "work",
-    name: "お仕事",
+    name: "work",
+    // name: "お仕事",
     path: "/work",
   },
   {
-    // name: "contact",
-    name: "連絡",
+    name: "contact",
+    // name: "連絡",
     path: "/contact",
   },
 ];

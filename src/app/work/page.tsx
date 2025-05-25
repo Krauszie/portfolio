@@ -27,13 +27,14 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "フロントエンド",
+    category: "Frontend",
+    // category: "フロントエンド",
     title: "Fundraisin",
-    // description:
-    //   "Fundraising Platform for non-profit organization, its go globally for ANZ, UK, and CA",
     description:
-      "非営利団体の資金調達プラットフォーム作成。<br/> \
-      現在オーストラリア、ニュージーランド、英国、カナダにグロバールに稼働しています。",
+      "Fundraising Platform for non-profit organization, its go globally for ANZ, UK, and CA",
+    // description:
+    //   "非営利団体の資金調達プラットフォーム作成。<br/> \
+    //   現在オーストラリア、ニュージーランド、英国、カナダにグロバールに稼働しています。",
     stack: [
       { name: "Html 5" },
       { name: "Code Igniter 3" },
@@ -46,11 +47,12 @@ const projects = [
   },
   {
     num: "02",
-    category: "フロントエンド",
+    category: "Frontend",
+    // category: "フロントエンド",
     title: "Setir Kanan",
-    // description:
-    //   "Market Place for Second Hand Car and Car Service by Astra Group",
-    description: "アストラグループの中古車や中古車サービスの市場",
+    description:
+      "Market Place for Second Hand Car and Car Service by Astra Group",
+    // description: "アストラグループの中古車や中古車サービスの市場",
     stack: [
       { name: "Next" },
       { name: "React" },
@@ -62,12 +64,13 @@ const projects = [
   },
   {
     num: "03",
-    category: "フロントエンド",
+    category: "Frontend",
+    // category: "フロントエンド",
     title: "In House Application for Human Resource",
-    // description:
-    //   "Creating Candidate Profiling using generated rule for it to becomes simple and less time to make",
     description:
-      "定められた規則で単純で作成時間が短くなる候補者プロファイリングを作成",
+      "Creating Candidate Profiling using generated rule for it to becomes simple and less time to make",
+    // description:
+    //   "定められた規則で単純で作成時間が短くなる候補者プロファイリングを作成",
     stack: [
       { name: "Next" },
       { name: "React" },
@@ -114,16 +117,16 @@ const Work = () => {
 
               {/* project category */}
               <h3 className="text-[25px] font-bold leading-none text-accent group-hover:text-accent transition-all duration-500 capitalize">
-                {/* {project.category} project */}
-                {project.category} ・プロジェクト
+                {project.category} project
+                {/* {project.category} ・プロジェクト */}
               </h3>
 
               {/* project description */}
               <p
                 className="text-white/60"
-                dangerouslySetInnerHTML={{ __html: project.description }}
+                // dangerouslySetInnerHTML={{ __html: project.description }}
               >
-                {/* {project.description} */}
+                {project.description}
               </p>
 
               {/* stack */}
@@ -196,7 +199,7 @@ const Work = () => {
                           src={project.image}
                           fill
                           className="object-contain"
-                          alt="funraisin"
+                          alt="pic"
                         />
                       </div>
                     </div>
